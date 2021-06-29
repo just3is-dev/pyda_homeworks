@@ -102,11 +102,11 @@ def get_package():
     if width < 15 and length < 15 and height < 15:
         return 'Коробка №1'
 
-    if width in range(15, 50) or length in range(15, 50) or height in range(15, 50):
-        return 'Коробка №2'
-
     if length > 200:
         return 'Упаковка для лыж'
+
+    if width in range(15, 50) or length in range(15, 50) or height in range(15, 50):
+        return 'Коробка №2'
 
     return 'Стандартная коробка №3'
 
